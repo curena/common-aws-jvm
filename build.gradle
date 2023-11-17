@@ -18,7 +18,7 @@ plugins {
 group = 'org.cecil'
 version = '0.0.1'
 
-def awsVersion = '2.21.24'
+def awsVersion = '2.21.25'
 def junitVersion = '5.9.3'
 
 java {
