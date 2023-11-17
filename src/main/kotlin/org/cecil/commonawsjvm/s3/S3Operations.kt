@@ -7,7 +7,7 @@ import software.amazon.awssdk.services.s3.model.ListBucketsResponse
 
 @Service
 class S3Operations(@Qualifier("defaultClient") val s3: S3Client) {
-    fun listBuckets(): ListBucketsResponse {
-        return s3.listBuckets()
-    }
+  fun listBuckets(): ListBucketsResponse {
+    return s3.listBuckets()
+  }
 }

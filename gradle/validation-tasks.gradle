@@ -1,0 +1,17 @@
+tasks.register('validate') {
+    dependsOn 'checkstyleMain', 'checkstyleTest', 'spotlessCheck'
+}
+
+checkstyle {
+    toolVersion = '10.12.5'  // Specify the Checkstyle version
+    configFile = file('config/checkstyle/checkstyle.xml')  // Path to your Checkstyle configuration file
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+    }
+    kotlin {
+        ktfmt()
+    }
+}
