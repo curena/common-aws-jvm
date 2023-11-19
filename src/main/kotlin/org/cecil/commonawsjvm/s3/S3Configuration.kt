@@ -29,7 +29,8 @@ class S3Configuration {
   }
 
   /**
-   * Creates an Amazon S3 client based no provided credentials (awsAccessKeyId, awsSecretAccessKey)
+   * Creates an Amazon S3 client based on provided credentials (`awsAccessKeyId`,
+   * `awsSecretAccessKey`)
    */
   @Bean
   fun staticCredentialsClient(staticCredentialsProvider: StaticCredentialsProvider): S3Client {
